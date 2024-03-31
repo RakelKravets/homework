@@ -1,0 +1,37 @@
+body{
+	background-color: #151237;
+	color: white;
+	text-shadow: 0 0 43px #f5cae0;
+	font-size: 24px;
+	font-family: 'Caveat';
+}
+
+.container{
+	padding: 30px;
+	border: 2px dashed #f86fb6;
+	margin: 10px;
+}
+
+br{
+	height: 40px;
+}
+.figure{
+	min-height: 100px;
+	border-radius: 100px;
+	border: 2px solid rgb(131, 252, 212);
+	box-shadow: 0 0 43px rgb(131, 252, 212);
+	position: fixed;
+	left: 50%;
+	right: 50px;
+	bottom: 100px;
+}
+
+.heart{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	z-index: 2;
+	bottom: 47px;
+	left: 110px;
+
+}

@@ -1,0 +1,189 @@
+
+body {
+
+    background-image: url(/images/background.jpg);
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-position: 50% 50%;
+
+}
+
+.hide{
+
+    opacity: 0;
+
+    visibility: hidden;
+
+}
+
+.btn {
+
+position: absolute;
+
+top: 40%;
+
+left: 40%;
+
+width: 100%;
+
+max-width: 250px;
+
+transition: 0.4s;
+
+
+
+}
+
+.btn button{
+
+background: rgba(34, 195, 179, 0.8);
+
+max-width: 250px;
+
+width: 100%;
+
+padding: 20px;
+
+border-radius: 15px;
+
+box-shadow: 0px 0px 33px 8px rgb(254 112 177 / 68%);
+
+font-size: 28px;
+
+color: rgb(255 255 255 / 60%);
+
+letter-spacing: 3px;
+
+text-shadow: 0 0 3px rgb(254 254 254 / 68%);
+
+transition: 0.5s;
+
+}
+
+
+
+.modal-window{
+
+    backdrop-filter: blur(10px);
+
+    background-color: transparent;
+
+    max-width: 500px;
+
+    width: 100%;
+
+    padding: 30px;
+
+    position: fixed;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border: 1px solid rgba(255, 255, 255, 0.223);
+
+    transition: 0.5s;
+
+    border-radius: 8px;
+
+
+}
+
+.modal-window_btn{
+
+    background-color: transparent;
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 10px;
+
+}
+
+.modal-window_btn img{
+
+max-width: 30px;
+
+}
+
+.modal-window_form{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 40px;
+
+    color: rgb(255 255 255 / 60%);
+
+    font-size: 35px;
+
+    letter-spacing: 3px;
+    
+    text-shadow: 0 0 3px rgb(254 254 254 / 68%);
+
+    width: 100%;
+
+}
+
+
+
+.input_style{
+
+background-color: rgba(0, 0, 34, 0.122);
+
+color:rgba(240, 248, 255, 0.807);
+
+font-size: 16px;
+
+border: 1px solid rgba(255, 255, 255, 0.223);
+
+height: 4vh;
+
+width: 20vw;
+
+border-radius: 40px;
+
+padding-left: 20px;
+
+}
+
+.input_style::placeholder {
+
+    color: rgba(240, 248, 255, 0.807);
+
+    font-size: 16px;
+
+}
+
+.modal-window_send-btn{
+
+    background: rgba(247, 135, 221, 0.779);
+
+    border-radius: 34px;
+
+    box-shadow: 0px 0px 33px 8px rgb(254 112 177 / 68%);
+
+    font-size: 22px;
+
+    color: rgba(255, 255, 255, 0.647);
+
+    letter-spacing: 3px;
+
+    text-shadow: 0 0 3px rgb(254 254 254 / 68%);
+
+    padding: 10px 20px;
+
+    margin: 20px;
+
+}
+
+

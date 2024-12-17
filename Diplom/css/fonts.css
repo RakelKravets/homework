@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Avant Garde';
+    src: local('ITC Avant Garde Gothic Std Bold'), local('ITCAvantGardeStd-Bold'),
+        url('../fonts/AvantGarde-Bold.woff2') format('woff2'),
+        url('../fonts/AvantGarde-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avant Garde';
+    src: local('ITC Avant Garde Gothic Std Medium'), local('ITCAvantGardeStd-Md'),
+        url('../fonts/AvantGarde-Md.woff2') format('woff2'),
+        url('../fonts/AvantGarde-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avant Garde-Demi';
+    src: local('ITC Avant Garde Gothic Std Demi'), local('ITCAvantGardeStd-Demi'),
+        url('../fonts/AvantGarde-Demi.woff2') format('woff2'),
+        url('../fonts/AvantGarde-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avant Garde';
+    src: local('ITC Avant Garde Gothic Book'), local('AvantGarde-Book'),
+        url('../fonts/AvantGarde-Book.woff2') format('woff2'),
+        url('../fonts/AvantGarde-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

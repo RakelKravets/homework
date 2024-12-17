@@ -1,0 +1,496 @@
+
+@import "fonts.css";
+@import "reset.css";
+
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+
+
+:root{
+	--accent-color: #F0E714;
+	--accent-color2: #f0e9142a;
+	--accent-color3: #FFFFFF;
+	--general-color: #24272E;
+	--general-color2: #555C68; 
+	--general-color3: #BAB9B9; 
+	--accent-bg: #101C26;
+	--general-bg: #F5F5F5;
+	--transition: all .4s;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: var(--general-bg);
+	color: var(--general-color2);
+	background-position: 50% 50%;
+	font-family: "Avant Garde", "Arial", sans-serif;
+	line-height: 1.5;
+}
+
+.container{
+	max-width: 1250px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.wrapper{
+	min-height: 100%;
+	width: 100%; 
+	overflow: hidden; 
+	display: flex;
+	flex-direction: column;
+}
+
+.link{
+	color: var(--general-color3);
+	white-space: nowrap; 
+	padding: 5px;
+	border-bottom: 1px solid transparent;
+
+	transition: var(--transition);
+}
+
+
+.link:hover{
+	color: var(--accent-color3);
+  border-bottom: 1px solid var(--accent-color3); 
+  padding-bottom: 5px;
+}
+
+.button {
+	color: var(--accent-color3);
+	white-space: nowrap;
+	border: 1px solid #cecece;
+	border-radius: 1000px;
+	padding: 15px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	transition: var(--transition);
+}
+
+.button path{
+	fill: var(--accent-color3);
+}
+
+.button:hover{
+	background-color: var(--accent-color);
+	color: var(--general-color);
+	border: none;
+	padding: 15px 40px;
+
+}
+
+.button:hover path{
+	fill: var(--accent-bg);
+}
+
+.subtitle {
+	display: inline-block;
+	background-color: var(--accent-color2);
+	color: var(--general-color);
+	text-transform: uppercase;
+	border-radius: 1000px;
+	padding: 10px 16px;
+}
+
+.title {
+	color: var(--general-color);
+	font-weight: 600;
+	font-size: 44px;
+	line-height: 1.27;
+}
+
+
+/*===========================================*/
+
+@media (max-width: 1200px){
+
+	.header-body_content-img {
+    width: 40vw;
+}
+
+
+.header-body_content-dgrm {
+	top: 37%;
+}
+
+.header-body_content-icon1 {
+	right: 46%;
+}
+
+.header-body_content-icon2 {
+	right: -24%;
+}
+
+.header-body_text {
+	margin-bottom: 85px;
+}
+
+
+}
+
+@media (max-width:1100px){
+	.footer-socials {
+		margin-right: 0vw;
+	}
+
+	.searvices-list {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+
+}
+
+@media (max-width:1000px){
+
+	.subtitle{
+		font-size: 13px;
+	}
+
+	.body--opened-menu{
+		overflow: hidden;
+	}
+
+	.body--opened-menu .burger {
+		transform: translateY(0%);
+		opacity: 1;
+		visibility: visible;
+}
+
+.burger-icon {
+		display: flex;
+		background-color: var(--accent-color);
+		border-radius: 50%;
+}
+
+	.header-top {
+		margin-bottom: 30px;
+	}
+
+	.burger {
+		position: fixed;
+		inset: 0;
+		z-index: 10;
+		background: var(--accent-bg);
+		padding: 26vh 15px 30px;
+		font-size: 24px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		transform: translateY(-50%);
+		opacity: 0;
+		visibility: hidden;
+		transition: var(--transition);
+}
+
+.header-nav{
+	position: static;
+	margin-bottom: 40px;
+}
+
+.nav_list {
+		flex-direction: column;
+		align-items: center;
+}
+
+
+/*=========================================*/
+
+.header-body_text{
+	max-width: none;
+	margin-top: 0px;
+}
+
+.header-body_back-imgs {
+	max-width: 278px;
+}
+
+.header-body_content-img{
+	display: none;
+}
+.header-body_content-dgrm{
+	position: relative;
+	top: 13%;
+	left: 5%;
+}
+.header-body_content-icon1 {
+	position: relative;
+	top: 61%;
+	left: 11%;
+}
+.header-body_content-icon2 {
+	position: static;
+}
+
+/*==============================================*/
+
+.about {
+	margin-top: 50px;
+}
+
+.about-inner{
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	align-items: center;
+}
+
+.about-img{
+	display: none;
+}
+
+.about-icon-start{
+	position: absolute;
+	top: -9%;
+}
+.about-icon-end{
+	display: none;
+}
+
+.about-text {
+	align-self: center;
+	align-items: center;
+	text-align: center;
+}
+
+.about-benefit {
+	text-align: start;
+}
+
+.about-icon-start, 
+.about-icon-end{
+	display: none;
+}
+
+/*==============================================*/
+
+.searvices {
+	margin-top: 40px;
+}
+.searvices-text {
+	margin-bottom: 30px;
+}
+
+/*==============================================*/
+
+.portfolio{
+	margin-top: 60px;
+}
+
+.portfolio-inner {
+	margin-bottom: 20px;
+
+}
+
+/*==============================================*/
+
+.contact{
+	margin-top: 40px;
+	padding-top: 35px;
+}
+
+/*==============================================*/
+
+.testimonials{
+	margin-top: 105px;
+}
+
+
+
+/*==============================================*/
+.footer-inner{
+	flex-wrap: wrap;
+}
+
+}
+
+@media (max-width:900px){
+
+	.contact-text{
+		padding: 0 15px 0 0;
+	}
+
+	.contact-form {
+		padding: 40px 30px;
+	}
+
+	.testimonials-text{
+		margin-bottom: 50px;
+	}
+
+	.testimonials-wrapper{
+		margin-bottom: 30px;
+	}
+
+}
+
+@media (max-width:800px){
+	.title {
+		font-size: 35px;
+	}
+
+	.about {
+		margin-top: 20px;
+	}
+	.searvices-list {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.searvices-item {
+    gap: 10px;
+    padding: 15px;
+    max-height: 200px;
+}
+.searvices-item h3{
+	font-size: 20px;
+}
+
+.contact-inner{
+	flex-direction: column;
+}
+
+.contact-text{
+	width: 100%;
+	text-align: center;
+}
+.contact-form{
+	width: 100%;
+}
+
+
+.contact-desk{
+	margin-bottom: 20px;
+}
+
+.contact-list {
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 50px;
+}
+
+}
+
+@media (max-width:600px){
+
+	.title {
+		font-size: 30px;
+	}
+
+	.header-body_text{
+		margin-bottom: 30px;
+	}
+	.header-body_text h1{
+		font-size: 38px;
+	}
+	.header-body_text p{
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+	.header-body_back-imgs {
+		display: none;
+	}
+
+	.header-body_text{
+		align-items: center;
+	}
+
+	.header-logos{
+		display: none;
+	}
+	.header-body_buttons{
+		margin-bottom: 30px;
+	}
+
+	.benefit span{
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	/*==============================================*/
+
+	.about {
+		margin-top: 0px;
+	}
+
+	.about-subtitle {
+		margin-bottom: 15px;
+	}
+	
+	.about-title {
+		margin-bottom: 10px;
+	}
+	.about-desk{
+		margin-bottom: 20px;
+	}
+
+	.about-benefit_img{
+		width: 35px;
+		height: 35px;
+	}
+	
+	.about-benefit_img img{
+		width: 70%;
+		padding: 3px;
+	}
+	
+
+/*==============================================*/
+
+.searvices{
+	margin-top: 0px;
+}
+
+.searvices-list {
+	display: block;
+}
+
+.searvices-item:not(:last-child){
+	margin-bottom: 15px;
+}
+
+.searvices-item_img{
+	width: 35px;
+	height: 35px;
+}
+
+.searvices-item_icon{
+	width: 70%;
+	padding: 3px;
+}
+
+/*==============================================*/
+
+
+.portfolio-inner {
+	flex-direction: column;
+	align-items: start;
+}
+
+
+/*==============================================*/
+
+
+}
+
+@media (max-width:400px){
+
+	.header-body_buttons{
+		flex-direction: column;
+	}
+	.header-body_benefit span{
+		font-size: 40px;
+		margin-bottom: 0px;
+	}
+	.about {
+		margin-top: 20px;
+	}
+
+}
